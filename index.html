@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Velynox — Developer</title>
-    <meta
-      name="description"
-      content="PHP developer from Berlin. Clean code, good docs, fast sites."
-    />
+    <meta name="description" content="PHP developer from Berlin. Clean code, good docs, fast sites." />
     <meta property="og:title" content="Velynox — Developer" />
     <meta property="og:description" content="PHP developer from Berlin. Clean code, good docs, fast sites." />
     <meta property="og:url" content="https://velynox.de" />
@@ -33,281 +30,382 @@
             fontFamily: {
               mono: ['"JetBrains Mono"', "monospace"],
             },
-            colors: {
-              ctp: {
-                base: "#1e1e2e",
-                mantle: "#181825",
-                crust: "#11111b",
-                surface0: "#313244",
-                surface1: "#45475a",
-                overlay0: "#6c7086",
-                text: "#cdd6f4",
-                subtext0: "#a6adc8",
-                subtext1: "#bac2de",
-                blue: "#89b4fa",
-                lavender: "#b4befe",
-                green: "#a6e3a1",
-                mauve: "#cba6f7",
-                peach: "#fab387",
-                pink: "#f38ba8",
-                teal: "#94e2d5",
-                sky: "#89dceb",
-              },
-            },
           },
         },
       };
     </script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="bg-ctp-base text-ctp-text min-h-screen">
-    <header class="border-b border-ctp-surface0 sticky top-0 z-10 bg-ctp-base/90 backdrop-blur-sm">
-      <div class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
-        <span class="text-ctp-mauve font-semibold">@velynox</span>
-        <nav aria-label="Primary" class="flex gap-6 text-sm text-ctp-subtext0">
-          <a href="#about" class="hover:text-ctp-text transition-colors">about</a>
-          <a href="#stack" class="hover:text-ctp-text transition-colors">stack</a>
-          <a href="#projects" class="hover:text-ctp-text transition-colors">projects</a>
-          <a href="#contact" class="hover:text-ctp-text transition-colors">contact</a>
+  <body class="bg-[#1e1e2e] text-[#cdd6f4] min-h-screen font-mono">
+    <!-- Sticky header -->
+    <header class="bg-[#181825]/90 backdrop-blur border-b border-[#313244] sticky top-0 z-10">
+      <div class="max-w-3xl mx-auto px-6 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#cba6f7]"></span>
+          <span class="text-[#cdd6f4] font-bold text-sm">velynox</span>
+        </div>
+        <nav aria-label="Primary" class="flex items-center gap-5 text-xs">
+          <a href="#about" class="text-[#a6adc8] hover:text-[#cdd6f4] transition-colors">about</a>
+          <a href="#stack" class="text-[#a6adc8] hover:text-[#cdd6f4] transition-colors">stack</a>
+          <a href="#projects" class="text-[#a6adc8] hover:text-[#cdd6f4] transition-colors">projects</a>
+          <a href="#contact" class="text-[#a6adc8] hover:text-[#cdd6f4] transition-colors">contact</a>
+          <a href="mailto:hey@velynox.de"
+             class="px-3 py-1.5 rounded-md bg-[#cba6f7] text-[#1e1e2e] text-xs font-bold hover:bg-[#b48ef0] transition-colors duration-150">
+            get in touch
+          </a>
         </nav>
       </div>
     </header>
 
     <main aria-label="Main content" class="max-w-3xl mx-auto px-6 py-20 space-y-24">
 
+      <!-- Hero / About -->
       <section id="about" class="flex flex-col md:flex-row md:items-start md:justify-between gap-12">
-        <div class="flex-1">
-          <p class="text-ctp-subtext0 text-sm mb-3 flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="currentColor" class="text-ctp-green shrink-0"><circle cx="12" cy="12" r="10"/></svg>
+        <div class="flex-1 flex flex-col gap-5">
+          <!-- Eyebrow -->
+          <span class="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest uppercase text-[#cba6f7] w-fit">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#cba6f7]"></span>
             Berlin, Germany
-          </p>
-          <h1 class="text-4xl font-bold mb-4">
-            Hey, I'm
-            <span class="text-ctp-mauve">Velynox</span>.
+          </span>
+
+          <h1 class="text-[#cdd6f4] font-bold text-3xl leading-tight">
+            Hey, I'm<br/>
+            <span class="text-[#cba6f7]">Velynox.</span>
           </h1>
-          <p class="text-ctp-subtext1 text-lg leading-relaxed max-w-xl">
+
+          <p class="text-[#a6adc8] text-sm leading-relaxed max-w-sm">
             Backend developer with a soft spot for clean PHP, well-structured SQL,
             and websites that don't make you wait. I build things that work and
             document things that don't explain themselves.
           </p>
-          <p class="text-ctp-overlay0 text-sm mt-4 italic">
-            — Prefers clean code over clever code. Gets unreasonably happy about a
-            good schema.
+
+          <p class="text-[#585b70] text-xs italic">
+            — Prefers clean code over clever code. Gets unreasonably happy about a good schema.
           </p>
-          <div class="flex gap-3 mt-8">
-            <a
-              href="mailto:hey@velynox.de"
-              class="px-4 py-2 bg-ctp-mauve text-ctp-base text-sm font-semibold rounded-md hover:opacity-90 transition-opacity"
-            >
+
+          <!-- Meta row -->
+          <div class="flex items-center gap-4 pt-2 border-t border-[#313244]">
+            <span class="text-[#585b70] text-xs">PHP 8.2+</span>
+            <span class="w-px h-3 bg-[#313244]"></span>
+            <span class="text-[#585b70] text-xs">Berlin</span>
+            <span class="w-px h-3 bg-[#313244]"></span>
+            <span class="text-[#585b70] text-xs">Open to work</span>
+          </div>
+
+          <!-- CTA row -->
+          <div class="flex flex-wrap gap-3 items-center">
+            <a href="mailto:hey@velynox.de"
+               class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-[#cba6f7] text-[#1e1e2e] text-sm font-bold hover:bg-[#b48ef0] transition-colors duration-150">
               get in touch
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+              </svg>
             </a>
-            <a
-              href="https://github.com/velynox"
-              target="_blank"
-              rel="noopener noreferrer me"
-              class="px-4 py-2 border border-ctp-surface1 text-ctp-subtext1 text-sm font-medium rounded-md hover:border-ctp-mauve hover:text-ctp-text transition-colors"
-            >
+            <a href="https://github.com/velynox" target="_blank" rel="noopener noreferrer me"
+               class="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-[#313244] text-[#a6adc8] text-sm font-bold hover:text-[#cdd6f4] hover:border-[#45475a] transition-colors duration-150">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/>
+              </svg>
               github
             </a>
           </div>
         </div>
 
-        <div class="shrink-0 flex justify-center md:block relative group">
-          <div class="absolute -inset-1 bg-gradient-to-r from-ctp-mauve to-ctp-blue rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200" aria-hidden="true"></div>
-          
+        <!-- Avatar card -->
+        <div class="shrink-0 flex justify-center md:block relative group w-fit">
+          <div class="absolute -inset-1 bg-gradient-to-r from-[#cba6f7] to-[#89b4fa] rounded-2xl blur opacity-20 group-hover:opacity-45 transition duration-700 group-hover:duration-200" aria-hidden="true"></div>
           <div class="relative">
-            <div class="relative w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden border-2 border-ctp-surface1 bg-ctp-crust transition-all duration-300 group-hover:border-ctp-mauve group-hover:rotate-3">
-              <img 
-                src="https://github.com/velynox.png" 
-                alt="Velynox" 
-                class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-300"
-              />
-              
-              <div class="absolute inset-0 pointer-events-none bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.1)_50%),linear-gradient(90deg,rgba(255,0,0,0.03),rgba(0,255,0,0.01),rgba(0,0,0,0.03))] bg-[length:100%_2px,3px_100%]"></div>
+            <div class="relative w-36 h-36 md:w-40 md:h-40 rounded-2xl overflow-hidden border-2 border-[#45475a] bg-[#11111b] transition-all duration-300 group-hover:border-[#cba6f7] group-hover:rotate-2">
+              <img src="https://github.com/velynox.png" alt="Velynox" class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-300" loading="lazy" />
+              <div class="absolute inset-0 pointer-events-none bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.08)_50%),linear-gradient(90deg,rgba(255,0,0,0.02),rgba(0,255,0,0.01),rgba(0,0,0,0.02))] bg-[length:100%_2px,3px_100%]"></div>
             </div>
-
-            <div class="absolute -bottom-2 -right-2 bg-ctp-base border-2 border-ctp-surface0 rounded-full px-3 py-1 flex items-center gap-2 shadow-lg">
+            <div class="absolute -bottom-2 -right-2 bg-[#1e1e2e] border-2 border-[#313244] rounded-full px-2.5 py-1 flex items-center gap-1.5 shadow-lg">
               <span class="relative flex h-2 w-2">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-ctp-green opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2 w-2 bg-ctp-green"></span>
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#a6e3a1] opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-[#a6e3a1]"></span>
               </span>
-              <span class="text-[10px] font-bold uppercase tracking-tighter text-ctp-subtext1">Active</span>
+              <span class="text-[10px] font-bold uppercase tracking-tighter text-[#a6adc8]">Active</span>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Stack -->
       <section id="stack">
-        <h2 class="text-xs uppercase tracking-widest text-ctp-subtext0 mb-8">
-          Tech Stack
-        </h2>
-
+        <h2 class="text-xs uppercase tracking-widest text-[#a6adc8] mb-8">Tech Stack</h2>
         <div class="space-y-8">
 
+          <!-- Expert -->
           <div>
-            <p class="text-ctp-overlay0 text-xs mb-4">// expert</p>
+            <p class="text-[#6c7086] text-xs mb-4">// expert</p>
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <div class="bg-ctp-mantle border border-ctp-surface0 rounded-lg p-4 hover:border-ctp-mauve transition-colors group">
-                <div class="text-ctp-mauve text-xs font-semibold group-hover:text-ctp-lavender transition-colors">PHP</div>
-                <div class="text-ctp-overlay0 text-xs mt-1">Laravel · Symfony</div>
+              <div class="bg-[#181825] border border-[#313244] rounded-lg p-4 hover:border-[#cba6f7] transition-colors group">
+                <div class="text-[#cba6f7] text-xs font-bold group-hover:text-[#b4befe] transition-colors">PHP</div>
+                <div class="text-[#6c7086] text-xs mt-1">Laravel · Symfony</div>
               </div>
-              <div class="bg-ctp-mantle border border-ctp-surface0 rounded-lg p-4 hover:border-ctp-blue transition-colors group">
-                <div class="text-ctp-blue text-xs font-semibold">SQL</div>
-                <div class="text-ctp-overlay0 text-xs mt-1">MySQL · PostgreSQL</div>
+              <div class="bg-[#181825] border border-[#313244] rounded-lg p-4 hover:border-[#89b4fa] transition-colors group">
+                <div class="text-[#89b4fa] text-xs font-bold">SQL</div>
+                <div class="text-[#6c7086] text-xs mt-1">MySQL · PostgreSQL</div>
               </div>
-              <div class="bg-ctp-mantle border border-ctp-surface0 rounded-lg p-4 hover:border-ctp-sky transition-colors group">
-                <div class="text-ctp-sky text-xs font-semibold">TailwindCSS</div>
-                <div class="text-ctp-overlay0 text-xs mt-1">utility-first</div>
+              <div class="bg-[#181825] border border-[#313244] rounded-lg p-4 hover:border-[#89dceb] transition-colors group">
+                <div class="text-[#89dceb] text-xs font-bold">TailwindCSS</div>
+                <div class="text-[#6c7086] text-xs mt-1">utility-first</div>
               </div>
-              <div class="bg-ctp-mantle border border-ctp-surface0 rounded-lg p-4 hover:border-ctp-peach transition-colors group">
-                <div class="text-ctp-peach text-xs font-semibold">HTML / CSS</div>
-                <div class="text-ctp-overlay0 text-xs mt-1">rock solid</div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <p class="text-ctp-overlay0 text-xs mb-4">// proficient</p>
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              <div class="bg-ctp-mantle border border-ctp-surface0 rounded-lg p-4 hover:border-ctp-lavender transition-colors group">
-                <div class="text-ctp-lavender text-xs font-semibold">TypeScript</div>
-                <div class="text-ctp-overlay0 text-xs mt-1">when needed</div>
-              </div>
-              <div class="bg-ctp-mantle border border-ctp-surface0 rounded-lg p-4 hover:border-ctp-green transition-colors group">
-                <div class="text-ctp-green text-xs font-semibold">Alpine.js</div>
-                <div class="text-ctp-overlay0 text-xs mt-1">Blade · Twig</div>
-              </div>
-              <div class="bg-ctp-mantle border border-ctp-surface0 rounded-lg p-4 hover:border-ctp-peach transition-colors group">
-                <div class="text-ctp-peach text-xs font-semibold">Vite</div>
-                <div class="text-ctp-overlay0 text-xs mt-1">build tool</div>
-              </div>
-              <div class="bg-ctp-mantle border border-ctp-surface0 rounded-lg p-4 hover:border-ctp-teal transition-colors group">
-                <div class="text-ctp-teal text-xs font-semibold">Bash</div>
-                <div class="text-ctp-overlay0 text-xs mt-1">automation</div>
-              </div>
-              <div class="bg-ctp-mantle border border-ctp-surface0 rounded-lg p-4 hover:border-ctp-blue transition-colors group">
-                <div class="text-ctp-blue text-xs font-semibold">Python</div>
-                <div class="text-ctp-overlay0 text-xs mt-1">scripting · utils</div>
+              <div class="bg-[#181825] border border-[#313244] rounded-lg p-4 hover:border-[#fab387] transition-colors group">
+                <div class="text-[#fab387] text-xs font-bold">HTML / CSS</div>
+                <div class="text-[#6c7086] text-xs mt-1">rock solid</div>
               </div>
             </div>
           </div>
 
+          <!-- Proficient -->
           <div>
-            <p class="text-ctp-overlay0 text-xs mb-4">// familiar</p>
+            <p class="text-[#6c7086] text-xs mb-4">// proficient</p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <div class="bg-[#181825] border border-[#313244] rounded-lg p-4 hover:border-[#b4befe] transition-colors group">
+                <div class="text-[#cdd6f4] text-xs font-bold">TypeScript</div>
+                <div class="text-[#6c7086] text-xs mt-1">when needed</div>
+              </div>
+              <div class="bg-[#181825] border border-[#313244] rounded-lg p-4 hover:border-[#a6e3a1] transition-colors group">
+                <div class="text-[#a6e3a1] text-xs font-bold">Alpine.js</div>
+                <div class="text-[#6c7086] text-xs mt-1">Blade · Twig</div>
+              </div>
+              <div class="bg-[#181825] border border-[#313244] rounded-lg p-4 hover:border-[#fab387] transition-colors group">
+                <div class="text-[#fab387] text-xs font-bold">Vite</div>
+                <div class="text-[#6c7086] text-xs mt-1">build tool</div>
+              </div>
+              <div class="bg-[#181825] border border-[#313244] rounded-lg p-4 hover:border-[#94e2d5] transition-colors group">
+                <div class="text-[#94e2d5] text-xs font-bold">Bash</div>
+                <div class="text-[#6c7086] text-xs mt-1">automation</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Familiar -->
+          <div>
+            <p class="text-[#6c7086] text-xs mb-4">// familiar</p>
             <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-ctp-surface0 text-ctp-subtext0 text-xs rounded-full hover:text-ctp-text hover:bg-ctp-surface1 transition-colors cursor-default">Docker</span>
-              <span class="px-3 py-1 bg-ctp-surface0 text-ctp-subtext0 text-xs rounded-full hover:text-ctp-text hover:bg-ctp-surface1 transition-colors cursor-default">Git</span>
-              <span class="px-3 py-1 bg-ctp-surface0 text-ctp-subtext0 text-xs rounded-full hover:text-ctp-text hover:bg-ctp-surface1 transition-colors cursor-default">Linux (Debian/Ubuntu)</span>
-              <span class="px-3 py-1 bg-ctp-surface0 text-ctp-subtext0 text-xs rounded-full hover:text-ctp-text hover:bg-ctp-surface1 transition-colors cursor-default">Redis</span>
-              <span class="px-3 py-1 bg-ctp-surface0 text-ctp-subtext0 text-xs rounded-full hover:text-ctp-text hover:bg-ctp-surface1 transition-colors cursor-default">REST APIs</span>
+              <span class="px-3 py-1 bg-[#313244] text-[#a6adc8] text-xs rounded-full hover:text-[#cdd6f4] hover:bg-[#45475a] transition-colors cursor-default">Docker</span>
+              <span class="px-3 py-1 bg-[#313244] text-[#a6adc8] text-xs rounded-full hover:text-[#cdd6f4] hover:bg-[#45475a] transition-colors cursor-default">Git</span>
+              <span class="px-3 py-1 bg-[#313244] text-[#a6adc8] text-xs rounded-full hover:text-[#cdd6f4] hover:bg-[#45475a] transition-colors cursor-default">Linux (Debian/Ubuntu)</span>
+              <span class="px-3 py-1 bg-[#313244] text-[#a6adc8] text-xs rounded-full hover:text-[#cdd6f4] hover:bg-[#45475a] transition-colors cursor-default">Redis</span>
+              <span class="px-3 py-1 bg-[#313244] text-[#a6adc8] text-xs rounded-full hover:text-[#cdd6f4] hover:bg-[#45475a] transition-colors cursor-default">REST APIs</span>
+              <span class="px-3 py-1 bg-[#313244] text-[#a6adc8] text-xs rounded-full hover:text-[#cdd6f4] hover:bg-[#45475a] transition-colors cursor-default">Python</span>
             </div>
           </div>
+
         </div>
       </section>
 
+""
+      <!-- Projects -->
       <section id="projects">
-        <h2 class="text-xs uppercase tracking-widest text-ctp-subtext0 mb-8">
-          Projects
-        </h2>
+        <h2 class="text-xs uppercase tracking-widest text-[#a6adc8] mb-8">Projects</h2>
         <div class="space-y-4">
 
-          <a href="https://github.com/velynox" target="_blank" rel="noopener noreferrer"
-            class="block bg-ctp-mantle border border-ctp-surface0 rounded-xl p-5 hover:border-ctp-mauve transition-colors group">
+          <!-- velynox.de -->
+          <a href="https://github.com/velynox/velynox.de" target="_blank" rel="noopener noreferrer"
+             class="block rounded-lg border border-[#313244] bg-[#181825] p-4 hover:border-[#45475a] transition-colors duration-150 group">
             <div class="flex items-start justify-between gap-4">
-              <div>
-                <p class="text-ctp-text text-sm font-semibold group-hover:text-ctp-mauve transition-colors">velynox.de</p>
-                <p class="text-ctp-subtext0 text-xs mt-1 leading-relaxed">
+              <div class="flex flex-col gap-2 min-w-0">
+                <div class="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[#a6adc8] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
+                  </svg>
+                  <span class="text-[#89b4fa] text-sm font-bold group-hover:underline">velynox.de</span>
+                  <span class="text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full border border-[#313244] text-[#a6adc8]">Public</span>
+                </div>
+                <p class="text-[#a6adc8] text-xs leading-relaxed">
                   This site. Static HTML + TailwindCSS. No build step, no framework, no regrets.
                 </p>
-                <div class="flex gap-2 mt-3">
-                  <span class="px-2 py-0.5 bg-ctp-surface0 text-ctp-sky text-xs rounded">HTML</span>
-                  <span class="px-2 py-0.5 bg-ctp-surface0 text-ctp-sky text-xs rounded">TailwindCSS</span>
+                <div class="flex items-center gap-4 pt-1 border-t border-[#313244]">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#fab387]"></span>
+                    <span class="text-[#a6adc8] text-xs">HTML</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#89dceb]"></span>
+                    <span class="text-[#a6adc8] text-xs">TailwindCSS</span>
+                  </div>
                 </div>
               </div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 mt-0.5 text-ctp-overlay0 group-hover:text-ctp-mauve transition-colors"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0 mt-0.5 text-[#6c7086] group-hover:text-[#a6adc8] transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6m0 0v6m0-6L10 14"/>
+              </svg>
             </div>
           </a>
 
-          <div class="bg-ctp-mantle border border-ctp-surface0 border-dashed rounded-xl p-5">
-            <p class="text-ctp-overlay0 text-xs mb-1">// more coming — currently building in private</p>
-            <p class="text-ctp-surface1 text-xs mt-2">PHP · Laravel · MySQL · REST APIs</p>
+          <!-- url_shortener -->
+          <a href="https://github.com/velynox/url_shortener" target="_blank" rel="noopener noreferrer"
+             class="block rounded-lg border border-[#313244] bg-[#181825] p-4 hover:border-[#45475a] transition-colors duration-150 group">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex flex-col gap-2 min-w-0">
+                <div class="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[#a6adc8] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
+                  </svg>
+                  <span class="text-[#89b4fa] text-sm font-bold group-hover:underline">url_shortener</span>
+                  <span class="text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full border border-[#313244] text-[#a6adc8]">Public</span>
+                </div>
+                <p class="text-[#a6adc8] text-xs leading-relaxed">
+                  Self-hosted URL shortener built with raw PHP and SQLite. Zero dependencies — no frameworks, no Composer, no build steps. 301 redirects, stats page (<code class="text-[#cba6f7]">+</code> suffix), JSON API.
+                </p>
+                <div class="flex items-center gap-4 pt-1 border-t border-[#313244]">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#cba6f7]"></span>
+                    <span class="text-[#a6adc8] text-xs">PHP 8.1+</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#89b4fa]"></span>
+                    <span class="text-[#a6adc8] text-xs">SQLite</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#89dceb]"></span>
+                    <span class="text-[#a6adc8] text-xs">TailwindCSS</span>
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0 mt-0.5 text-[#6c7086] group-hover:text-[#a6adc8] transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </div>
+          </a>
+
+          <!-- ui_shelf -->
+          <a href="https://github.com/velynox/ui_shelf" target="_blank" rel="noopener noreferrer"
+             class="block rounded-lg border border-[#313244] bg-[#181825] p-4 hover:border-[#45475a] transition-colors duration-150 group">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex flex-col gap-2 min-w-0">
+                <div class="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[#a6adc8] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
+                  </svg>
+                  <span class="text-[#89b4fa] text-sm font-bold group-hover:underline">ui_shelf</span>
+                  <span class="text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full border border-[#313244] text-[#a6adc8]">Public</span>
+                </div>
+                <p class="text-[#a6adc8] text-xs leading-relaxed">
+                  A PHP-based UI component browser. Browse, preview, and copy clean components. No database, no build step. Catppuccin Mocha, JetBrains Mono.
+                </p>
+                <div class="flex items-center gap-4 pt-1 border-t border-[#313244]">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#cba6f7]"></span>
+                    <span class="text-[#a6adc8] text-xs">PHP</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#89dceb]"></span>
+                    <span class="text-[#a6adc8] text-xs">TailwindCSS</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#fab387]"></span>
+                    <span class="text-[#a6adc8] text-xs">HTML</span>
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0 mt-0.5 text-[#6c7086] group-hover:text-[#a6adc8] transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </div>
+          </a>
+
+          <!-- More coming -->
+          <div class="rounded-lg border border-[#313244] border-dashed bg-[#181825] p-4">
+            <p class="text-[#6c7086] text-xs mb-1">// more coming — currently building in private</p>
+            <p class="text-[#45475a] text-xs mt-2">PHP · Laravel · MySQL · REST APIs</p>
           </div>
 
         </div>
       </section>
 
+      <!-- Setup -->
       <section id="setup">
-        <h2 class="text-xs uppercase tracking-widest text-ctp-subtext0 mb-6">
-          Setup
-        </h2>
-        <div class="bg-ctp-mantle border border-ctp-surface0 rounded-xl p-6 grid grid-cols-2 sm:grid-cols-3 gap-y-4 gap-x-6 text-sm">
+        <h2 class="text-xs uppercase tracking-widest text-[#a6adc8] mb-6">Setup</h2>
+        <div class="rounded-lg border border-[#313244] bg-[#181825] p-6 grid grid-cols-2 sm:grid-cols-3 gap-y-4 gap-x-6 text-sm">
           <div>
-            <p class="text-ctp-overlay0 text-xs mb-1">editor</p>
-            <p class="text-ctp-text">VS Code <span class="text-ctp-overlay0">(vim)</span></p>
+            <p class="text-[#6c7086] text-xs mb-1">editor</p>
+            <p class="text-[#cdd6f4]">VS Code <span class="text-[#6c7086]">(vim)</span></p>
           </div>
           <div>
-            <p class="text-ctp-overlay0 text-xs mb-1">terminal</p>
-            <p class="text-ctp-text">Zsh + Starship</p>
+            <p class="text-[#6c7086] text-xs mb-1">terminal</p>
+            <p class="text-[#cdd6f4]">Zsh + Starship</p>
           </div>
           <div>
-            <p class="text-ctp-overlay0 text-xs mb-1">os</p>
-            <p class="text-ctp-text">Arch <span class="text-ctp-overlay0">btw</span></p>
+            <p class="text-[#6c7086] text-xs mb-1">os</p>
+            <p class="text-[#cdd6f4]">Arch <span class="text-[#6c7086]">btw</span></p>
           </div>
           <div>
-            <p class="text-ctp-overlay0 text-xs mb-1">font</p>
-            <p class="text-ctp-text">JetBrains Mono</p>
+            <p class="text-[#6c7086] text-xs mb-1">font</p>
+            <p class="text-[#cdd6f4]">JetBrains Mono</p>
           </div>
           <div>
-            <p class="text-ctp-overlay0 text-xs mb-1">theme</p>
-            <p class="text-ctp-mauve">Catppuccin Mocha</p>
+            <p class="text-[#6c7086] text-xs mb-1">theme</p>
+            <p class="text-[#cba6f7]">Catppuccin Mocha</p>
           </div>
           <div>
-            <p class="text-ctp-overlay0 text-xs mb-1">browser</p>
-            <p class="text-ctp-text">Firefox Dev Ed.</p>
+            <p class="text-[#6c7086] text-xs mb-1">browser</p>
+            <p class="text-[#cdd6f4]">Firefox Dev Ed.</p>
           </div>
         </div>
       </section>
 
+      <!-- Contact -->
       <section id="contact" class="pb-12">
-        <h2 class="text-xs uppercase tracking-widest text-ctp-subtext0 mb-4">
-          Contact
-        </h2>
-        <p class="text-ctp-subtext1 mb-6 text-sm leading-relaxed">
-          Got a project, a question, or just want to talk about database schema
-          design at 2am? I'm reachable.
+        <h2 class="text-xs uppercase tracking-widest text-[#a6adc8] mb-4">Contact</h2>
+        <p class="text-[#a6adc8] mb-6 text-sm leading-relaxed max-w-sm">
+          Got a project, a question, or just want to talk about database schema design at 2am? I'm reachable.
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
-          <a
-            href="mailto:hey@velynox.de"
-            class="inline-flex items-center gap-2 text-ctp-mauve hover:text-ctp-lavender transition-colors font-medium"
-          >
+          <a href="mailto:hey@velynox.de"
+             class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-[#cba6f7] text-[#1e1e2e] text-sm font-bold hover:bg-[#b48ef0] transition-colors duration-150 w-fit">
             hey@velynox.de
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
           </a>
-          <a
-            href="https://github.com/velynox"
-            target="_blank"
-            rel="noopener noreferrer me"
-            class="inline-flex items-center gap-2 text-ctp-subtext1 hover:text-ctp-text transition-colors font-medium"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <a href="https://github.com/velynox" target="_blank" rel="noopener noreferrer me"
+             class="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-[#313244] text-[#a6adc8] text-sm font-bold hover:text-[#cdd6f4] hover:border-[#45475a] transition-colors duration-150 w-fit">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
             github.com/velynox
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
           </a>
         </div>
       </section>
 
     </main>
 
-    <footer class="border-t border-ctp-surface0 py-6">
-      <div class="max-w-3xl mx-auto px-6 flex items-center justify-between text-xs text-ctp-overlay0">
-        <span>© 2026 velynox.de</span>
-        <div class="flex items-center gap-4">
-          <a href="https://github.com/velynox" target="_blank" rel="noopener noreferrer me" class="hover:text-ctp-subtext0 transition-colors flex items-center gap-1.5">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            github
-          </a>
-          <span>html · tailwind · <a href="https://github.com/velynox/velynox.de" target="_blank" rel="noopener noreferrer" class="hover:text-ctp-subtext0 transition-colors">no unnecessary abstractions</a></span>
+    <!-- Footer -->
+    <footer class="border-t border-[#313244] pt-6 pb-8">
+      <div class="max-w-3xl mx-auto px-6 flex flex-col gap-5">
+        <div class="flex items-start justify-between gap-6">
+          <div class="flex flex-col gap-1.5">
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#cba6f7]"></span>
+              <span class="text-[#cdd6f4] font-bold text-sm">velynox</span>
+            </div>
+            <p class="text-[#585b70] text-xs">PHP developer from Berlin.</p>
+          </div>
+          <div class="flex gap-8 text-xs">
+            <div class="flex flex-col gap-2">
+              <p class="text-[#585b70] font-bold tracking-widest uppercase">Site</p>
+              <a href="#about" class="text-[#a6adc8] hover:text-[#cdd6f4] transition-colors">About</a>
+              <a href="#projects" class="text-[#a6adc8] hover:text-[#cdd6f4] transition-colors">Projects</a>
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="text-[#585b70] font-bold tracking-widest uppercase">Links</p>
+              <a href="https://github.com/velynox" target="_blank" rel="noopener noreferrer me" class="text-[#a6adc8] hover:text-[#cdd6f4] transition-colors">GitHub</a>
+              <a href="mailto:hey@velynox.de" class="text-[#a6adc8] hover:text-[#cdd6f4] transition-colors">Email</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between border-t border-[#313244] pt-4">
+          <p class="text-[#585b70] text-xs">&copy; 2026 velynox.de</p>
+          <p class="text-[#585b70] text-xs">
+            html · tailwind ·
+            <a href="https://github.com/velynox/velynox.de" target="_blank" rel="noopener noreferrer" class="hover:text-[#a6adc8] transition-colors">no unnecessary abstractions</a>
+          </p>
         </div>
       </div>
     </footer>
