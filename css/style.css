@@ -1,0 +1,29 @@
+/* velynox.de — custom styles */
+/* Tailwind utility classes handle the bulk; this file covers what Tailwind can't. */
+
+* {
+  font-family: "JetBrains Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+::selection {
+  background: #cba6f7;
+  color: #1e1e2e;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #181825;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #45475a;
+  border-radius: 3px;
+}
