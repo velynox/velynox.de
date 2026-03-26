@@ -81,44 +81,48 @@
 
     <main class="max-w-3xl mx-auto px-6 py-20 space-y-24">
 
-      <section id="about">
-        <img 
-          src="https://github.com/velynox.png" 
-          alt="Velynox" 
-          class="w-20 h-20 rounded-full border-2 border-ctp-surface0 mb-8"
-        />
-        
-        <p class="text-ctp-subtext0 text-sm mb-3">
-          <span class="text-ctp-green">●</span> Berlin, Germany
-        </p>
-        <h1 class="text-4xl font-bold mb-4">
-          Hey, I'm
-          <span class="text-ctp-mauve">Velynox</span>.
-        </h1>
-        <p class="text-ctp-subtext1 text-lg leading-relaxed max-w-xl">
-          Backend developer with a soft spot for clean PHP, well-structured SQL,
-          and websites that don't make you wait. I build things that work and
-          document things that don't explain themselves.
-        </p>
-        <p class="text-ctp-overlay0 text-sm mt-4 italic">
-          — Prefers clean code over clever code. Gets unreasonably happy about a
-          good schema.
-        </p>
-        <div class="flex gap-3 mt-8">
-          <a
-            href="mailto:hey@velynox.de"
-            class="px-4 py-2 bg-ctp-mauve text-ctp-base text-sm font-semibold rounded-md hover:opacity-90 transition-opacity"
-          >
-            get in touch
-          </a>
-          <a
-            href="https://github.com/velynox"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="px-4 py-2 border border-ctp-surface1 text-ctp-subtext1 text-sm font-medium rounded-md hover:border-ctp-mauve hover:text-ctp-text transition-colors"
-          >
-            github
-          </a>
+      <section id="about" class="flex flex-col md:flex-row md:items-start md:justify-between gap-12">
+        <div class="flex-1">
+          <p class="text-ctp-subtext0 text-sm mb-3">
+            <span class="text-ctp-green">●</span> Berlin, Germany
+          </p>
+          <h1 class="text-4xl font-bold mb-4">
+            Hey, I'm
+            <span class="text-ctp-mauve">Velynox</span>.
+          </h1>
+          <p class="text-ctp-subtext1 text-lg leading-relaxed max-w-xl">
+            Backend developer with a soft spot for clean PHP, well-structured SQL,
+            and websites that don't make you wait. I build things that work and
+            document things that don't explain themselves.
+          </p>
+          <p class="text-ctp-overlay0 text-sm mt-4 italic">
+            — Prefers clean code over clever code. Gets unreasonably happy about a
+            good schema.
+          </p>
+          <div class="flex gap-3 mt-8">
+            <a
+              href="mailto:hey@velynox.de"
+              class="px-4 py-2 bg-ctp-mauve text-ctp-base text-sm font-semibold rounded-md hover:opacity-90 transition-opacity"
+            >
+              get in touch
+            </a>
+            <a
+              href="https://github.com/velynox"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-4 py-2 border border-ctp-surface1 text-ctp-subtext1 text-sm font-medium rounded-md hover:border-ctp-mauve hover:text-ctp-text transition-colors"
+            >
+              github
+            </a>
+          </div>
+        </div>
+
+        <div class="shrink-0 flex justify-center md:block">
+          <img 
+            src="https://github.com/velynox.png" 
+            alt="Velynox" 
+            class="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-ctp-surface0 shadow-xl"
+          />
         </div>
       </section>
 
